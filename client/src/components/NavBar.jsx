@@ -32,7 +32,6 @@ const NavBar = () => {
         setActiveLink(value);
     }
 
-
     return (
         <Navbar expand="xl" className={scrolled ? "scrolled" : ""}>
             <Container>
