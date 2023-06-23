@@ -217,30 +217,57 @@ nav.navbar.scrolled {
 /* -----------------------------------------------------------Home---------------------------------------- */
 .home {
   margin-top: 0;
-  padding: 10% 0 1% 0;
+  padding: 10% 0 45% 0;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   background-position: top center;
   margin-bottom: -50px;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.home-body {
-  font-size: 200%;
-  margin-left: 10%;
-  margin-right: 50%;
-  margin-top: 2.5%;
-  text-align: center;
-  color: rgb(223, 222, 222);
+.home-left {
+  max-width: 60%;
+  float: left;
+  max-height: 50rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 10rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.year {
+.home-right {
+  max-width: 40%;
+  float: right;
+  max-height: 60rem;
+  padding-right: 11rem;
+  padding-top: 5rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  display: flex;
+}
+
+.h1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-writer {
   background-image: linear-gradient(to right, #b24592, #f15f79);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.fact-container {
-  margin-top: 10%;
+.home body {
+  font-size: 200%;
+  text-align: center;
+  color: rgb(223, 222, 222);
+  background: none !important;
 }
 
 .downarrow {
@@ -254,67 +281,55 @@ nav.navbar.scrolled {
   transition: 0.3s ease-in-out;
 }
 
+.face-resize {
+  max-width: 30rem;
+  max-height: 25 rem;
+  border-radius: 20px;
+}
 
-.tablefact {
-  max-width: 500px;
-  vertical-align: top;
-  position: absolute;
+.face-container {
+  text-align: center;
+}
+
+.fact-container {
+  margin-top: 10%;
+  display: flex;
+}
+
+.fact {
   font-size: 110%;
   text-align: center !important;
-  color: rgba(170, 157, 231, 0.5);
+  color: rgba(130, 111, 218, 0.5);
+  display: inline-block;
+  overflow-wrap: break-word;
+  max-width: 22rem;
+  position: absolute;
+  margin-left: 9rem;
 }
 
-.tabledate {
-  vertical-align: top;
-  width: 150px;
+.fact-prompt {
   font-size: 125%;
-  padding-bottom: 10px;
 }
 
-.tablebutton {
-  vertical-align: top;
-  margin-top: 50;
-  color: rgb(63, 33, 91);
+.year {
+  background-image: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .filler-space {
+  margin: 0;
+  padding: 0;
   opacity: 0.5;
 }
 
-.table1 {
-  position: relative;
-  left: 65%;
-  bottom: 210px;
-  width: 500px;
+.fact-button {
+  margin-top: 1rem;
 }
 
 .Daily-Fact {
   margin: 0;
   color: rgb(63, 33, 91);
-}
-
-.home h1 {
-  display: flex;
-}
-
-.type-writer {
-  background-image: linear-gradient(to right, #b24592, #f15f79);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.home-header {
-  margin-left: 16%;
-  margin-right: 30%;
-  margin-top: 5%;
-}
-
-.face-resize {
-  width: 30%;
-  height: 80%;
-  margin-left: 63%;
-  margin-top: -30%;
-  border-radius: 20px;
 }
 
 /* -----------------------------------------------------------Projects---------------------------------------- */

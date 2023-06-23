@@ -39,16 +39,15 @@ const DailyFact = () => {
 
     return (
 
-        <table className="table1">
-            <tr>
-                <td className="tabledate">{monthNames[month]} {day} {isClicked ? <span className="year"> {year} </span> : <span className="filler-space"> XXXX </span>} :</td>
-                <td rowspan="2" className="tablefact">{fact.charAt(0).toUpperCase() + fact.slice(1)}</td>
-            </tr>
-            <tr>
-                <td className="tablebutton"><button type="button" class="btn btn-light" onClick={handleClick}> <p className="Daily-Fact">Daily Fact</p> </button></td>
-            </tr>
+        <div className="fact-container">
+            <span className="fact-prompt">
+                {monthNames[month]} {day} {isClicked ? <span className="year"> {year} </span> : <span className="filler-space"> XXXX </span>} : <br></br>
+                <button type="button" class="btn btn-light fact-button" onClick={handleClick}> <span className="Daily-Fact"> Daily Fact </span></button>
+            </span>
+            <span className="fact"> {fact.charAt(0).toUpperCase() + fact.slice(1)} </span>
+        </div>
 
-        </table>
+
     )
 }
 
