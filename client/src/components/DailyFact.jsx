@@ -38,17 +38,17 @@ const DailyFact = () => {
 
 
     return (
-        <div>
-            {isClicked ? (
-                <span>
-                    <div className="fact-prompt">
-                        {monthNames[month]} {day} <span className="year"> {year}</span> :
-                    </div>
-                    <span className="fact text-center"> {fact.charAt(0).toUpperCase() + fact.slice(1)} </span>
-                </span>
-            ) : null}
-            <button type="button" class="btn btn-light" onClick={handleClick}> Daily Fact</button>
-        </div>
+
+        <table className="table1">
+            <tr>
+                <td className="tabledate">{monthNames[month]} {day} {isClicked ? <span className="year"> {year} </span> : <span className="filler-space"> XXXX </span>} :</td>
+                <td rowspan="2" className="tablefact">{fact.charAt(0).toUpperCase() + fact.slice(1)}</td>
+            </tr>
+            <tr>
+                <td className="tablebutton"><button type="button" class="btn btn-light" onClick={handleClick}> <p className="Daily-Fact">Daily Fact</p> </button></td>
+            </tr>
+
+        </table>
     )
 }
 
