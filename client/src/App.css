@@ -335,7 +335,7 @@ nav.navbar.scrolled {
 /* -----------------------------------------------------------Projects---------------------------------------- */
 #projects {
   background: black;
-  padding: 1% 0 10% 0;
+  padding: 5% 0 10% 0;
   margin-top: 0;
 }
 
@@ -343,3 +343,56 @@ nav.navbar.scrolled {
   margin-top: 0;
   text-align: center;
 }
+
+.projects-container {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardandarrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  /* change to max width and height after */
+  width: 80rem;
+  height: 40rem;
+  background: #b24592;
+}
+
+.dotbar-container {
+  display: flex;
+}
+
+.dot {
+  margin-top: 0;
+  font-size: 10rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.dotOn {
+  max-height: 0.75rem;
+  max-width: 0.75rem;
+}
+
+.dotOff {
+  max-height: 0.75rem;
+  max-width: 0.75rem;
+  opacity: 0.5;
+}
+
+
+.left-arrow-container {}
+
+.right-arrow-container {}
