@@ -25,27 +25,28 @@ export const Projects = () => {
 
     return (
         <section id="projects">
-            <h1 className="projects-header">  Projects </h1>
+            <div className="projects-header" ><h1>  Projects </h1> </div>
             <div className='projects-container'>
                 <div className='cardandarrow-container'>
-                    <div className='left-arrow-container'>
+                    <div>
                         <button onClick={handleLeftClick}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="violet" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" class="bi bi-chevron-left" viewBox="0 0 16 16" className='arrow'>
                                 <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                             </svg>
                         </button>
                     </div>
-                    <div className="cards-container">
+                    <div>
                         {activeProject}
                     </div>
-                    <div className='right-arrow-container'>
+                    <div>
                         <button onClick={handleRightClick}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="violet" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16" className='arrow'>
                                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                             </svg>
                         </button>
                     </div>
                 </div>
+
                 <div className='dotbar-container'>
                     <div className="dot"> <img className={index === 0 ? 'dotOn' : 'dotOff'} src={White_Circle} alt="."></img> </div>
                     <div className="dot"> <img className={index === 1 ? 'dotOn' : 'dotOff'} src={White_Circle} alt="."></img> </div>
