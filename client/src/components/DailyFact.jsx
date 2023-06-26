@@ -40,11 +40,15 @@ const DailyFact = () => {
     return (
 
         <div className="fact-container">
-            <span className="fact-prompt">
-                {monthNames[month]} {day} {isClicked ? <span className="year"> {year} </span> : <span className="filler-space"> XXXX </span>} : <br></br>
-                <button type="button" class="btn btn-light fact-button" onClick={handleClick}> <span className="Daily-Fact"> Daily Fact </span></button>
-            </span>
-            <span className="fact"> {fact.charAt(0).toUpperCase() + fact.slice(1)} </span>
+            <div className="fact-prompt" style={{ display: "flex", flexDirection: "column" }}>
+                <div>
+                    {monthNames[month]} {day} {isClicked ? <span className="year"> {year} </span> : <span className="filler-space"> XXXX </span>} :
+                </div>
+                <div>
+                    <button type="button" class="btn btn-light fact-button" onClick={handleClick}> <span className="Daily-Fact"> Daily Fact </span></button>
+                </div>
+            </div>
+            <div className="fact"> {fact.charAt(0).toUpperCase() + fact.slice(1)} </div>
         </div>
 
 

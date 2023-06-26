@@ -226,7 +226,7 @@ nav.navbar.scrolled {
 /* -----------------------------------------------------------Home---------------------------------------- */
 .home {
   margin-top: 0;
-  padding: 10% 0 20% 0;
+  padding: 10% 0 15% 0;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   background-position: top center;
   margin-bottom: -50px;
@@ -236,6 +236,7 @@ nav.navbar.scrolled {
 
 .home-container {
   display: flex;
+  padding-top: 3.5rem;
 }
 
 .home-left {
@@ -295,44 +296,35 @@ nav.navbar.scrolled {
 
 .face-resize {
   max-width: 30rem;
-  max-height: 25 rem;
+  max-height: 25rem;
   border-radius: 20px;
 }
 
 .face-container {
-  text-align: center;
   flex-grow: 1;
 }
 
 .dailyfact-container {
   padding-top: 3rem;
-  text-align: left;
-  margin-right: auto;
-  padding-left: 9rem;
   flex-grow: 15;
-  overflow-x: auto;
 }
 
 .fact-container {
   display: flex;
+  max-width: 30rem;
 }
 
 .fact {
   font-size: 110%;
   text-align: left !important;
   color: rgba(130, 111, 218, 0.5);
-  display: inline-block;
-  overflow-wrap: break-word;
   max-width: 22rem;
-  position: absolute;
-  margin-left: 9rem;
+  padding-left: 1rem;
 }
 
 .fact-prompt {
   font-size: 125%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  min-width: 8rem;
 }
 
 .year {
