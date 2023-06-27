@@ -3,14 +3,14 @@ import blog_gif from '../../assets/blog_gif.gif';
 
 const Salinity = () => {
     return (
-        <motion.div className="blog"
+        <motion.div className="project-component"
             initial={{ width: "95%" }}
             animate={{ width: "100%" }}
-
+            style={{ backgroundColor: "rgb(150, 150, 150)" }}
         >
             <div className="card-text">
                 <div>
-                    <h1> Salinity</h1>
+                    <h1> Salinity Testing Device</h1>
                 </div>
                 <div style={{ fontSize: "1.4rem", opacity: 0.9 }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae iaculis ante.
@@ -19,7 +19,7 @@ const Salinity = () => {
                 </div>
                 <div>
                     <button className="card-button ">
-                        <div className="blog-button">
+                        <div className="project-button" style={{ background: "#575757" }}>
                             Learn More
                         </div>
                     </button>

@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 import email from '../assets/email.png'
-import DailyFact from "./DailyFact";
+import { Link } from "react-scroll";
 
 
 const NavBar = () => {
@@ -46,7 +46,10 @@ const NavBar = () => {
                             <div className="social-icon">
                                 <a href='http://www.linkedin.com/in/richard-wang-15230725b'  ><img src={linkedin} alt='LinkedIn' className="image-resize" /></a>
                                 <a href='https://github.com/RichardWangg' ><img src={github} alt='GitHub' className="image-resize" /></a>
-                                <a href='#contact' ><img src={email} alt='' className="image-resize" /></a>
+                                <Link to="contact" smooth='easeInQuint' duration={500} offset={-100}>
+
+                                    <a href='#contact' ><img src={email} alt='' className="image-resize" /></a>
+                                </Link>
                             </div>
                         </Nav.Link>
                     </Nav>

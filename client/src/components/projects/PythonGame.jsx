@@ -3,9 +3,10 @@ import blog_gif from '../../assets/blog_gif.gif';
 
 const PythonGame = () => {
     return (
-        <motion.div className="blog"
+        <motion.div className="project-component"
             initial={{ width: "95%" }}
             animate={{ width: "100%" }}
+            style={{ backgroundColor: "rgb(134, 189, 138)" }}
 
         >
             <div className="card-text">
@@ -19,7 +20,7 @@ const PythonGame = () => {
                 </div>
                 <div>
                     <button className="card-button ">
-                        <div className="blog-button">
+                        <div className="project-button" style={{ background: "#5B9B7B" }}>
                             Learn More
                         </div>
                     </button>

@@ -279,8 +279,9 @@ nav.navbar.scrolled {
 .home body {
   font-size: 200%;
   text-align: center;
-  color: rgb(223, 222, 222);
+  opacity: 0.9 !important;
   background: none !important;
+
 }
 
 .downarrow {
@@ -317,14 +318,15 @@ nav.navbar.scrolled {
 .fact {
   font-size: 110%;
   text-align: left !important;
-  color: rgba(130, 111, 218, 0.5);
+  color: white;
+  opacity: 0.8;
   max-width: 22rem;
   padding-left: 1rem;
 }
 
 .fact-prompt {
   font-size: 125%;
-  min-width: 8rem;
+  min-width: 9rem;
 }
 
 .year {
@@ -351,7 +353,7 @@ nav.navbar.scrolled {
 /* -----------------------------------------------------------Projects---------------------------------------- */
 #projects {
   background: black;
-  padding: 5% 0 5% 0;
+  padding: 5rem 0 5% 0;
   margin-top: 0;
 }
 
@@ -388,24 +390,23 @@ nav.navbar.scrolled {
   transition: 0.3s ease-in-out;
 }
 
-.blog {
+.project-component {
   border-radius: 1rem;
-  background-color: rgb(66, 66, 218);
   display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
 }
 
 .card-text {
-  max-width: 50%;
+  max-width: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 3rem;
 }
 
 .card-text h1 {
@@ -418,10 +419,8 @@ nav.navbar.scrolled {
   padding-top: 1rem;
 }
 
-.blog-button {
-  background: rgb(24, 24, 129);
+.project-button {
   color: white;
-  opacity: 0.85;
   border-radius: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -430,8 +429,8 @@ nav.navbar.scrolled {
   transition: 0.3s ease-in-out;
 }
 
-.blog-button:hover {
-  opacity: 1;
+.project-button:hover {
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
 
@@ -443,8 +442,7 @@ nav.navbar.scrolled {
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 50%;
-  padding-left: 1rem;
-  padding-right: 2rem;
+  padding-left: 8rem;
 }
 
 .gif img {
@@ -477,3 +475,126 @@ nav.navbar.scrolled {
   transition: 0.3s ease-in-out;
   opacity: 0.5;
 }
+
+/* -----------------------------------------------------------Contact---------------------------------------- */
+#contact {
+  background: linear-gradient(90.21deg, rgba(74, 47, 189, 0.5), rgba(26, 125, 238, 0.5) 100.58%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 0 5% 0;
+}
+
+#contact h1 {
+  color: white;
+  padding-bottom: 3rem;
+}
+
+.contact-container {
+  display: flex;
+  padding-top: 5rem;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.myemail-container {
+  padding-bottom: 1rem;
+}
+
+.myemail {
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.email-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.email-field {
+  font-size: 1.5rem;
+  width: 50rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.name-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.name-field {
+  font-size: 1.5rem;
+  width: 50rem;
+  text-align: center;
+  border-radius: .5rem;
+}
+
+.message-container {
+  padding-top: 1rem;
+  display: flex;
+}
+
+.message-field {
+  font-size: 1.5rem;
+  width: 50rem;
+  height: 15rem;
+  border-radius: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.email-field::placeholder,
+.name-field::placeholder,
+.message-field::placeholder {
+  color: rgb(145, 147, 181);
+}
+
+.submit-container {
+  padding-top: 1rem;
+}
+
+.submit {
+  background: rgba(74, 47, 189, 0.5);
+  color: white;
+  opacity: 0.68;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  border-color: none;
+  padding-bottom: 0.5rem;
+  transition: 0.2s ease-in-out;
+  border: none;
+}
+
+.submit:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 1;
+}
+
+
+.envelope-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding-right: 5%;
+}
+
+.envelope {
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
+
+/* ADD MEDIA QUERY FOR VERY SMALL SCREEM */
