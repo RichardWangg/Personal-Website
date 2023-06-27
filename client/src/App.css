@@ -226,7 +226,7 @@ nav.navbar.scrolled {
 /* -----------------------------------------------------------Home---------------------------------------- */
 .home {
   margin-top: 0;
-  padding: 10% 0 15% 0;
+  padding: 8% 0 20% 0;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   background-position: top center;
   margin-bottom: -50px;
@@ -236,7 +236,8 @@ nav.navbar.scrolled {
 
 .home-container {
   display: flex;
-  padding-top: 3.5rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 
 .home-left {
@@ -262,12 +263,13 @@ nav.navbar.scrolled {
 
 .home h1 {
   display: flex;
+  font-size: 4rem;
 }
 
 .h1-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .type-writer {
@@ -277,8 +279,8 @@ nav.navbar.scrolled {
 }
 
 .home body {
-  font-size: 200%;
-  text-align: center;
+  font-size: 1.5rem;
+  text-align: left;
   opacity: 0.9 !important;
   background: none !important;
 
@@ -297,8 +299,8 @@ nav.navbar.scrolled {
 
 .face-resize {
   max-width: 30rem;
-  max-height: 25rem;
-  border-radius: 20px;
+  max-height: 30rem;
+  border-radius: 7rem;
 }
 
 .face-container {
@@ -345,10 +347,6 @@ nav.navbar.scrolled {
   margin-top: 1rem;
 }
 
-.Daily-Fact {
-  margin: 0;
-  color: rgb(63, 33, 91);
-}
 
 /* -----------------------------------------------------------Projects---------------------------------------- */
 #projects {
@@ -360,6 +358,7 @@ nav.navbar.scrolled {
 #projects h1 {
   margin-top: 0;
   text-align: center;
+
 }
 
 .projects-container {
@@ -597,4 +596,117 @@ nav.navbar.scrolled {
   width: 50%;
 }
 
-/* ADD MEDIA QUERY FOR VERY SMALL SCREEM */
+
+/* -----------------------------------------------------------about---------------------------------------- */
+#about {
+  background: black;
+}
+
+.colophon {
+  height: 50rem;
+  border-radius: 50%;
+  background: linear-gradient(90.21deg, rgba(74, 47, 189, 0.5), rgba(26, 125, 238, 0.5) 100.58%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-text {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  width: 60%;
+  height: 60%;
+  padding-top: 2rem;
+}
+
+.about-card {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: linear-gradient(90.21deg, rgba(74, 47, 189, 0.5), rgba(26, 125, 238, 0.5) 100.58%);
+  border-radius: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 20rem;
+}
+
+.react-resize {
+  height: 10rem;
+  width: 13rem;
+}
+
+.js-resize {
+  height: 10rem;
+  width: 15rem;
+}
+
+.python-resize {
+  height: 10rem;
+  width: 10rem;
+}
+
+.cpp-resize {
+  height: 10rem;
+  width: 10rem;
+}
+
+.experience-card {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: linear-gradient(90.21deg, rgba(74, 47, 189, 0.5), rgba(26, 125, 238, 0.5) 100.58%);
+  border-radius: 1rem;
+  align-items: center;
+}
+
+
+/* -----------------------------------------------------------footer--------------------------------------- */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+#footer>div:first-child {
+  margin-right: auto;
+}
+
+.social-icon-footer {
+  display: flex;
+}
+
+.social-icon-footer a {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 10px;
+  /* Adjust this value to increase or decrease the spacing between icons */
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-icon-footer a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon-footer a:hover::before {
+  transform: scale(1);
+}

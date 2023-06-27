@@ -23,11 +23,11 @@ export const Home = () => {
                     </h1></div>
                     <body>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, ligula nec laoreet fermentum, mauris risus tincidunt ante, sed bibendum mauris ligula vitae velit. Aliquam in nisl nisi. <br></br>
-                        <Link to="projects" smooth='easeInQuint' duration={500} offset={-100}>
+                        <center><Link to="projects" smooth='easeInQuint' duration={500} offset={-100}>
                             <button href="#projects" className="down-arrow">
                                 <img src={downarrow} className="image-resize downarrow" alt="Down Arrow" />
                             </button>
-                        </Link>
+                        </Link></center>
                     </body>
                 </div>
                 <div className="home-right">

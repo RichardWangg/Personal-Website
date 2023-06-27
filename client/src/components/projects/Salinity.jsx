@@ -6,7 +6,7 @@ const Salinity = () => {
         <motion.div className="project-component"
             initial={{ width: "95%" }}
             animate={{ width: "100%" }}
-            style={{ backgroundColor: "rgb(150, 150, 150)" }}
+            style={{ background: "linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%)" }}
         >
             <div className="card-text">
                 <div>
@@ -19,7 +19,7 @@ const Salinity = () => {
                 </div>
                 <div>
                     <button className="card-button ">
-                        <div className="project-button" style={{ background: "#575757" }}>
+                        <div className="project-button" style={{ background: "rgba(175, 91, 143, 0.5)" }}>
                             Learn More
                         </div>
                     </button>

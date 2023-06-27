@@ -8,7 +8,7 @@ const BlogWebsite = () => {
         <motion.div className="project-component"
             initial={{ width: "95%" }}
             animate={{ width: "100%" }}
-            style={{ backgroundColor: "rgba(26, 125, 238, 0.5)" }}
+            style={{ background: "linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%)" }}
 
         >
             <div className="card-text">
@@ -22,7 +22,7 @@ const BlogWebsite = () => {
                 </div>
                 <div>
                     <button className="card-button ">
-                        <div className="project-button" style={{ background: "rgba(20, 39, 61, 0.5)" }}>
+                        <div className="project-button" style={{ background: "rgba(175, 91, 143, 0.5)" }}>
                             Learn More
                         </div>
                     </button>
