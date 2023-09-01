@@ -226,7 +226,7 @@ nav.navbar.scrolled {
 /* -----------------------------------------------------------Home---------------------------------------- */
 .home {
   margin-top: 0;
-  padding: 8% 0 20% 0;
+  /* padding: 8% 0 20% 0; */
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   background-position: top center;
   margin-bottom: -50px;
@@ -238,6 +238,8 @@ nav.navbar.scrolled {
   display: flex;
   padding-top: 2rem;
   padding-left: 2rem;
+  height: 100vh;
+  align-items: center;
 }
 
 .home-left {
@@ -245,7 +247,7 @@ nav.navbar.scrolled {
   max-height: 50rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
   justify-content: center;
   align-items: center;
 }
@@ -254,11 +256,11 @@ nav.navbar.scrolled {
   width: 40%;
   max-height: 60rem;
   padding-right: 5rem;
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding-bottom: 5rem;
 }
 
 .home h1 {
@@ -300,7 +302,7 @@ nav.navbar.scrolled {
 .face-resize {
   max-width: 30rem;
   max-height: 30rem;
-  border-radius: 7rem;
+  border-radius: 20%;
 }
 
 .face-container {
@@ -353,6 +355,18 @@ nav.navbar.scrolled {
   background: black;
   padding: 5rem 0 5% 0;
   margin-top: 0;
+}
+
+.project-repo {
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+
+.project-repo:hover {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 
 #projects h1 {
@@ -436,18 +450,32 @@ nav.navbar.scrolled {
 .gif {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center !important;
   height: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 50%;
-  padding-left: 8rem;
+  padding-left: 6rem;
 }
 
-.gif img {
-  max-width: 100%;
-  max-height: 100%;
+.blog-gif {
+  width: 100%;
   object-fit: contain;
+  border-radius: 1rem;
+}
+
+.music-gif {
+  width: 115%;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+.python-gif {
+  border-radius: 1rem;
+  object-fit: contain;
+}
+
+.salt-pic {
   border-radius: 1rem;
 }
 

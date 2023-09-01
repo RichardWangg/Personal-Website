@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import blog_gif from '../../assets/blog_gif.gif';
+import salinity_pic from '../../assets/salinity_pic.jpg';
 
 const Salinity = () => {
     return (
@@ -10,24 +10,26 @@ const Salinity = () => {
         >
             <div className="card-text">
                 <div>
-                    <h1> Salinity Testing Device</h1>
+                    <h1 style={{ textAlign: "left" }}> Salinity Testing Device</h1>
                 </div>
                 <div style={{ fontSize: "1.4rem", opacity: 0.9 }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae iaculis ante.
-                    Nunc pulvinar pretium arcu, non posuere elit iaculis et. Maecenas scelerisque ipsum
-                    eget arcu fermentum, non venenatis erat varius. Donec in accumsan quam
+                    A device to detect salt levels in drinking water to ensure that the water is safe using LEDs to show
+                    the safety level. An STM32CUBE micro-controller was programmed in C++ using the STM32CubeProgrammerIDE to capture and
+                    respond to input from the water.
                 </div>
                 <div>
-                    <button className="card-button ">
-                        <div className="project-button" style={{ background: "rgba(175, 91, 143, 0.5)" }}>
-                            Learn More
-                        </div>
-                    </button>
+                    <a href="https://github.com/RichardWangg">
+                        <button className="card-button " >
+                            <div className="project-button" style={{ background: "rgba(175, 91, 143, 0.5)" }}>
+                                Learn More
+                            </div>
+                        </button>
+                    </a>
                 </div>
             </div>
 
             <div className="gif">
-                <img src={blog_gif} alt="gif" />
+                <img className="salt-pic" src={salinity_pic} alt="gif" />
             </div>
 
         </motion.div>

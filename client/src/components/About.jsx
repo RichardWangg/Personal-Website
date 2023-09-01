@@ -6,18 +6,7 @@ import CPPLogo from '../assets/CPP-Logo.png';
 export const About = () => {
     return (
         <section id='about'>
-            <div style={{ display: "flex", flexDirection: "column", padding: "5rem 5rem 5rem 5rem", alignItems: "center" }}>
-                <div style={{ display: "flex", width: "50rem" }}>
-                    <div className="colophon">
-                        <h1> About Me </h1>
-                        <p className="circle-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, ligula nec laoreet fermentum, mauris risus tincidunt ante, sed bibendum mauris ligula vitae velit. Aliquam in nisl nisi. <br></br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, ligula nec laoreet fermentum, mauris risus tincidunt ante, sed bibendum mauris ligula vitae velit. Aliquam in nisl nisi. <br></br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, ligula nec laoreet fermentum, mauris risus tincidunt ante, sed bibendum mauris ligula vitae velit. Aliquam in nisl nisi. <br></br>
-
-                        </p>
-                    </div>
-                </div>
+            <div style={{ display: "flex", flexDirection: "column", padding: "2rem 3rem 5rem 5rem", alignItems: "center" }}>
                 <div style={{ display: "flex", flexDirection: "column", paddingBottom: "6rem", width: "85%", paddingTop: "5rem" }}>
                     <div className="Skills" style={{ paddingBottom: "1rem" }}>
                         <h1> Skills </h1>
@@ -29,7 +18,7 @@ export const About = () => {
                         <div><img src={CPPLogo} alt='react' className='cpp-resize' /></div>
                     </div>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", paddingBottom: "3.5rem", width: "50%" }}>
+                <div style={{ display: "flex", flexDirection: "column", paddingBottom: "3.5rem", width: "60%" }}>
                     <div className="Experience" style={{ paddingBottom: "1rem" }}>
                         <h1> Experience </h1>
                     </div>
@@ -42,8 +31,9 @@ export const About = () => {
 
                             </div>
                             <div style={{ paddingLeft: "2rem", fontSize: "1.2rem" }}>
-                                At reliably me Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, ligula nec laoreet fermentum, mauris risus tincidunt ante, sed bibendum mauris ligula vitae velit. Aliquam in nisl nisi. <br></br>
-
+                                Redesigned and refactored the admin console web app to improve the user interface, using React. Reorganized the existing website to be more customer-oriented using React and working collaboratively with
+                                graphic designers, increasing user engagement by 20%. Changed the existing menu-based chatbot to an OpenAI-integrated full natural language chatbot using the
+                                Twilio messaging API, OpenAI API, and Python, leading to a 50% reduction in customer support time
                             </div>
                         </div>
                     </div>

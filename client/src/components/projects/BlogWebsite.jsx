@@ -13,24 +13,25 @@ const BlogWebsite = () => {
         >
             <div className="card-text">
                 <div>
-                    <h1> Blog Website</h1>
+                    <h1 style={{ textAlign: "left" }}> Blog Website</h1>
                 </div>
                 <div style={{ fontSize: "1.4rem", opacity: 0.9 }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae iaculis ante.
-                    Nunc pulvinar pretium arcu, non posuere elit iaculis et. Maecenas scelerisque ipsum
-                    eget arcu fermentum, non venenatis erat varius. Donec in accumsan quam
+                    A blogging website where users can login, view, and post their own blogs! This website was made in React, and utilizes a variety of tools. MySQL was used as
+                    a database to store user and blog information, and express was used to create a RESTful API to perform CRUD operations with the database and integrate logging in and out.
                 </div>
                 <div>
-                    <button className="card-button ">
-                        <div className="project-button" style={{ background: "rgba(175, 91, 143, 0.5)" }}>
-                            Learn More
-                        </div>
-                    </button>
+                    <a href="https://github.com/RichardWangg">
+                        <button className="card-button " >
+                            <div className="project-button" style={{ background: "rgba(175, 91, 143, 0.5)" }}>
+                                Learn More
+                            </div>
+                        </button>
+                    </a>
                 </div>
             </div>
 
             <div className="gif">
-                <img src={blog_gif} alt="gif" />
+                <img className="blog-gif" src={blog_gif} alt="gif" />
             </div>
 
         </motion.div>

@@ -2,6 +2,7 @@ import React from "react";
 import DailyFact from "./DailyFact";
 import downarrow from '../assets/downarrow.png';
 import person from '../assets/person.jpg';
+import my_face from '../assets/my_face.JPG'
 import { Link } from "react-scroll";
 import Typewriter from 'typewriter-effect';
 
@@ -22,7 +23,9 @@ export const Home = () => {
                         /></div>
                     </h1></div>
                     <body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, ligula nec laoreet fermentum, mauris risus tincidunt ante, sed bibendum mauris ligula vitae velit. Aliquam in nisl nisi. <br></br>
+                        An aspiring software developer with skills in varying fields. I'm a student at the University of Waterloo
+                        studying computer engineering.
+                        <br></br>
                         <center><Link to="projects" smooth='easeInQuint' duration={500} offset={-100}>
                             <button href="#projects" className="down-arrow">
                                 <img src={downarrow} className="image-resize downarrow" alt="Down Arrow" />
@@ -32,11 +35,11 @@ export const Home = () => {
                 </div>
                 <div className="home-right">
                     <div className="face-container">
-                        <img src={person} className="face-resize" />
+                        <img src={my_face} className="face-resize" />
                     </div>
-                    <div className="dailyfact-container">
+                    {/* <div className="dailyfact-container">
                         <DailyFact />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import BlogWebsite from './projects/BlogWebsite';
 import PythonGame from './projects/PythonGame';
 import Salinity from './projects/Salinity';
+import MusicWebsite from './projects/MusicWebsite';
 import White_Circle from '../assets/White_Circle.svg.png';
 
 export const Projects = () => {
-    const projects = [<BlogWebsite />, <PythonGame />, <Salinity />];
+    const projects = [<BlogWebsite />, <PythonGame />, <Salinity />, <MusicWebsite />];
     const length = projects.length;
 
     const [activeProject, setActiveProject] = useState(projects[0]);
@@ -25,7 +26,8 @@ export const Projects = () => {
 
     return (
         <section id="projects">
-            <div className="projects-header"><h1 style={{}}>  Projects </h1> </div>
+            <center><div className="projects-header"><h1 style={{}}>  Projects </h1> </div></center>
+            <center> <div style={{ paddingTop: "1rem" }}> <a className='project-repo' href='https://github.com/RichardWangg/Personal-Website'> Check Out the Repo for This Website! </a> </div> </center>
             <div className='projects-container'>
                 <div className='cardandarrow-container'>
                     <div>
@@ -51,6 +53,7 @@ export const Projects = () => {
                     <div className="dot"> <img className={index === 0 ? 'dotOn' : 'dotOff'} src={White_Circle} alt="."></img> </div>
                     <div className="dot"> <img className={index === 1 ? 'dotOn' : 'dotOff'} src={White_Circle} alt="."></img> </div>
                     <div className="dot"> <img className={index === 2 ? 'dotOn' : 'dotOff'} src={White_Circle} alt="."></img> </div>
+                    <div className="dot"> <img className={index === 3 ? 'dotOn' : 'dotOff'} src={White_Circle} alt="."></img> </div>
                 </div>
             </div>
         </section>
