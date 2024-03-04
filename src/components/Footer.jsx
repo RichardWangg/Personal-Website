@@ -1,4 +1,3 @@
-import { color } from "framer-motion";
 import { Link } from "react-scroll";
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'

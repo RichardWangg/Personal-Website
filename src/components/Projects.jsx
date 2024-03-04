@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import BlogWebsite from './projects/BlogWebsite';
 import PythonGame from './projects/PythonGame';
 import Salinity from './projects/Salinity';

@@ -1,7 +1,5 @@
 import React from "react";
-import DailyFact from "./DailyFact";
 import downarrow from '../assets/downarrow.png';
-import person from '../assets/person.jpg';
 import my_face from '../assets/my_face.JPG'
 import { Link } from "react-scroll";
 import Typewriter from 'typewriter-effect';
@@ -35,7 +33,7 @@ export const Home = () => {
                 </div>
                 <div className="home-right">
                     <div className="face-container">
-                        <img src={my_face} className="face-resize" />
+                        <img src={my_face} alt='react' className="face-resize" />
                     </div>
                     {/* <div className="dailyfact-container">
                         <DailyFact />
