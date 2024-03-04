@@ -682,17 +682,42 @@ nav.navbar.scrolled {
   width: 10rem;
 }
 
+.reliablyMe-resize {
+  height: 8rem;
+  width: 8rem;
+}
+
+.BoC-resize {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 0.4rem;
+}
+
+.UWFE-resize {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 0.4rem;
+}
+
 .experience-card {
   display: flex;
+  flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   background: linear-gradient(90.21deg, rgba(74, 47, 189, 0.5), rgba(26, 125, 238, 0.5) 100.58%);
   border-radius: 1rem;
-  align-items: center;
+
 }
 
+.experience-title-container {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 /* -----------------------------------------------------------footer--------------------------------------- */
 #footer {

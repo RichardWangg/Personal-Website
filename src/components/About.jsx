@@ -2,6 +2,9 @@ import JavaScriptLogo from '../assets/JavaScript-Logo.png';
 import ReactLogo from '../assets/React-Logo.png';
 import PythonLogo from '../assets/Python-Logo.png';
 import CPPLogo from '../assets/CPP-Logo.png';
+import ReliablyMeLogo from '../assets/ReliablyMe-Logo.png';
+import BoCLogo from '../assets/BoC-Logo.jpeg';
+import UWFELogo from '../assets/UWFE-Logo.jpg';
 
 export const About = () => {
     return (
@@ -18,22 +21,33 @@ export const About = () => {
                         <div><img src={CPPLogo} alt='react' className='cpp-resize' /></div>
                     </div>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", paddingBottom: "3.5rem", width: "60%" }}>
+                <div style={{ display: "flex", flexDirection: "column", paddingBottom: "3.5rem", width: "45%" }}>
                     <div className="Experience" style={{ paddingBottom: "1rem" }}>
                         <h1> Experience </h1>
                     </div>
                     <div className="experience-card">
-                        <div style={{ display: "flex" }}>
+                        <div style={{ display: "flex", flexDirection: "row", paddingBottom: "2rem" }}>
                             <div>
-                                <h2>
-                                    ReliablyMe:
-                                </h2>
-
+                                <img src={BoCLogo} alt='react' className='BoC-resize' />
                             </div>
-                            <div style={{ paddingLeft: "2rem", fontSize: "1.2rem" }}>
-                                Redesigned and refactored the admin console web app to improve the user interface, using React. Reorganized the existing website to be more customer-oriented using React and working collaboratively with
-                                graphic designers, increasing user engagement by 20%. Changed the existing menu-based chatbot to an OpenAI-integrated full natural language chatbot using the
-                                Twilio messaging API, OpenAI API, and Python, leading to a 50% reduction in customer support time
+                            <div className='experience-title-container'>
+                                <h2> Bank of Canada <span style={{ fontWeight: 'lighter' }}> - </span> <span style={{ fontSize: "1.75rem", fontWeight: "normal" }}> Web Developer </span> </h2>
+                            </div>
+                        </div>
+                        <div style={{ display: "flex", flexDirection: "row", paddingBottom: "2rem" }}>
+                            <div>
+                                <img src={ReliablyMeLogo} alt='react' className='reliablyMe-resize' />
+                            </div>
+                            <div className='experience-title-container'>
+                                <h2> ReliablyMe <span style={{ fontWeight: 'lighter' }}> - </span> <span style={{ fontSize: "1.75rem", fontWeight: "normal" }}> Full-Stack Developer </span> </h2>
+                            </div>
+                        </div>
+                        <div style={{ display: "flex", flexDirection: "row" }}>
+                            <div>
+                                <img src={UWFELogo} alt='react' className='UWFE-resize' />
+                            </div>
+                            <div className='experience-title-container'>
+                                <h2> UWFE <span style={{ fontWeight: 'lighter' }}> - </span> <span style={{ fontSize: "1.75rem", fontWeight: "normal" }}> Software Developer </span> </h2>
                             </div>
                         </div>
                     </div>

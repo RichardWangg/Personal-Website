@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 import email from '../assets/email.png'
-import { Link } from "react-scroll";
 
 
 const NavBar = () => {
@@ -22,13 +21,23 @@ const NavBar = () => {
             }
         }
         window.addEventListener("scroll", onScroll)
-        console.log(window.scrollY)
-        console.log(scrolled)
         return () => window.removeEventListener("scroll", onScroll)
     }, []) //[], the code itself will only run once, it can still check for scrolling though in that one running of it
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
+    }
+
+    const openLinkedIn = () => {
+        window.open('http://www.linkedin.com/in/richard-wang-15230725b', '_blank');
+    }
+
+    const openGitHub = () => {
+        window.open('https://github.com/RichardWangg', '_blank');
+    }
+
+    const openEmail = () => {
+        window.open('mailto:richardwangg198@gmail.com', '_blank');
     }
 
     return (
@@ -44,12 +53,9 @@ const NavBar = () => {
                         <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}> About </Nav.Link>
                         <Nav.Link className={activeLink === 'social' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('social')}>
                             <div className="social-icon">
-                                <a href='http://www.linkedin.com/in/richard-wang-15230725b'  ><img src={linkedin} alt='LinkedIn' className="image-resize" /></a>
-                                <a href='https://github.com/RichardWangg' ><img src={github} alt='GitHub' className="image-resize" /></a>
-                                <Link to="contact" smooth='easeInQuint' duration={500} offset={-100}>
-
-                                    <a href='#contact' ><img src={email} alt='' className="image-resize" /></a>
-                                </Link>
+                                <button onClick={openLinkedIn}><img src={linkedin} alt='LinkedIn' className="image-resize" /></button>
+                                <button onClick={openGitHub}><img src={github} alt='GitHub' className="image-resize" /></button>
+                                <button onClick={openEmail}><img src={email} alt='' className="image-resize" /></button>
                             </div>
                         </Nav.Link>
                     </Nav>
