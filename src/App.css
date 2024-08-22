@@ -349,6 +349,10 @@ nav.navbar.scrolled {
   margin-top: 1rem;
 }
 
+.home-buttons {
+  display: flex;
+  gap: 0.15rem;
+}
 
 /* -----------------------------------------------------------Projects---------------------------------------- */
 #projects {
@@ -382,7 +386,6 @@ nav.navbar.scrolled {
   align-items: center;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-bottom: 5rem;
 }
 
 .cardandarrow-container {
@@ -694,6 +697,12 @@ nav.navbar.scrolled {
 }
 
 .UWFE-resize {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 0.4rem;
+}
+
+.ford-resize {
   height: 8rem;
   width: 8rem;
   border-radius: 0.4rem;
