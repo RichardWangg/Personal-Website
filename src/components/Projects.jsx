@@ -6,7 +6,7 @@ import MusicWebsite from './projects/MusicWebsite';
 import White_Circle from '../assets/White_Circle.svg.png';
 
 export const Projects = () => {
-    const projects = [<BlogWebsite />, <PythonGame />, <Salinity />, <MusicWebsite />];
+    const projects = [<PythonGame />, <BlogWebsite />, <Salinity />, <MusicWebsite />];
     const length = projects.length;
 
     const [activeProject, setActiveProject] = useState(projects[0]);
