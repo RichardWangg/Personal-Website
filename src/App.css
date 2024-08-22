@@ -352,6 +352,7 @@ nav.navbar.scrolled {
 .home-buttons {
   display: flex;
   gap: 0.15rem;
+  justify-content: center;
 }
 
 /* -----------------------------------------------------------Projects---------------------------------------- */
@@ -376,7 +377,6 @@ nav.navbar.scrolled {
 #projects h1 {
   margin-top: 0;
   text-align: center;
-
 }
 
 .projects-container {
