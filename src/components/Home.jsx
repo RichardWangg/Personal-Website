@@ -27,7 +27,7 @@ export const Home = () => {
                     <div className="h1-container"><h1> Hello! I'm <p style={{ opacity: 0 }}>|</p>
                         <div className="type-writer"><Typewriter
                             options={{
-                                strings: ['Richard Wang', 'A Software Developer', 'A Student', 'A Web Developer'],
+                                strings: ['Richard Wang', 'A Software Developer', 'A Student'],
                                 autoStart: true,
                                 loop: true,
                                 delay: 50,

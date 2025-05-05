@@ -6,6 +6,7 @@ import ReliablyMeLogo from '../assets/ReliablyMe-Logo.png';
 import BoCLogo from '../assets/BoC-Logo.jpeg';
 import UWFELogo from '../assets/UWFE-Logo.jpg';
 import FordLogo from '../assets/Ford-Logo.jpg';
+import FordProLogo from "../assets/Ford-Pro-Logo.png";
 
 export const About = () => {
     return (
@@ -16,6 +17,14 @@ export const About = () => {
                         <h1> Experience </h1>
                     </div>
                     <div className="experience-card">
+                        <div style={{ display: "flex", flexDirection: "row", paddingBottom: "2rem" }}>
+                            <div>
+                                <img src={FordProLogo} alt='react' className='ford-pro-resize' />
+                            </div>
+                            <div className='experience-title-container'>
+                                <h2> Ford Pro <span style={{ fontWeight: 'lighter' }}> - </span> <span style={{ fontSize: "1.75rem", fontWeight: "normal" }}> Software Engineer </span> </h2>
+                            </div>
+                        </div>
                         <div style={{ display: "flex", flexDirection: "row", paddingBottom: "2rem" }}>
                             <div>
                                 <img src={FordLogo} alt='react' className='ford-resize' />

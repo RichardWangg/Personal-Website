@@ -300,8 +300,8 @@ nav.navbar.scrolled {
 }
 
 .face-resize {
-  max-width: 30rem;
-  max-height: 30rem;
+  max-width: 25rem;
+  max-height: 25rem;
   border-radius: 20%;
 }
 
@@ -705,6 +705,12 @@ nav.navbar.scrolled {
 .ford-resize {
   height: 8rem;
   width: 8rem;
+  border-radius: 0.4rem;
+}
+
+.ford-pro-resize {
+  height: 7.5rem;
+  width: 8.5rem;
   border-radius: 0.4rem;
 }
 
